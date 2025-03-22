@@ -1,0 +1,127 @@
+/* Apply styles to body */
+body {
+    background-color: #37b978; /* Background color */
+    color: white;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.nav {
+    position: fixed; /* Stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.nav img {
+    width: 40px; /* Small button-like size */
+    height: auto;
+    cursor: pointer;
+    border-radius: 0%; /* Circular logo */
+    transition: transform 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+.nav img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Navigation Links */
+.nav a {
+    font-family: "Orbitron", sans-serif;
+    color: #fff2e9; /* Gold to contrast with dark background */
+    text-decoration: underline;
+    font-size: 18px;
+    margin: 0 15px; /* Reducing space between links */
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #fff; /* Turns white on hover */
+    text-decoration: none;
+}
+
+/* Main content wrapper */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin-top: 80px; /* To avoid overlapping with the navbar */
+}
+
+/* Text Container */
+.container {
+    max-width: 45%;
+    text-align: left;
+}
+
+/* Styling the Heading */
+.company-title {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 60px; /* Adjusted for better readability */
+    margin-bottom: 10px;
+}
+
+/* Styling the Paragraph */
+.company-description {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #fff2e9;
+}
+
+/* Image Container */
+.spot-image {
+    max-width: 50%;
+    text-align: right;
+}
+
+/* Image Styling */
+.spot-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Smooth edges */
+}
+
+/* Order Button Container - Centers Button at the Bottom */
+.order-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0; /* Adds spacing from the bottom */
+}
+
+/* Order Button */
+.order-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: #000; /* Black text */
+    font-family: "Orbitron", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 25px; /* Rounded edges */
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.order-button:hover {
+    background-color: #FFC107; /* Slightly darker gold */
+    transform: scale(1.05);
+}
